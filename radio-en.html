@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles-en.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('u5C0JUy5j0rxkkC72');
+        })();
+    </script>
+</head>
+<body class="body">
+    <div class="section1">
+        <nav>
+            <div class="navFlexContainer">
+                <div class="navGridContainer">
+                    <div class="leftNav">
+                        <h3>JC FM</h3>
+                    </div>
+                    <div class="middleNav">
+                        <div class="list">
+                            <a href="about.html">About us</a>
+                            <a href="nice.html">Team</a>
+                            <a href="shop.html">Shop</a>
+                            <a href="news.html">News</a>
+                            <a href="radio-en.html">Home</a>
+                            <div class="moon-icon" onclick="showWeatherSection()">
+                                <ion-icon name="cloudy-night-outline"></ion-icon>
+                            </div>
+                            <div class="weather-section">
+                                <div class="container">
+                                    <div class="search-bar">
+                                        <input type="text" placeholder="City,Country...">
+                                        <button class="search-button"><ion-icon name="search-outline"></ion-icon></button>
+                                    </div>
+                                    <div class="tabs">
+                                        <button class="tab active" data-tab="today">Today</button>
+                                        <button class="tab" data-tab="tomorrow">Tomorrow</button>
+                                    </div>
+                                    <div class="weather-content">
+                                        <div class="main-weather">
+                                            <div class="weather-icon">🌤️</div>
+                                            <div class="temperature">31°C</div>
+                                            <div class="condition">Mostly Cloudy</div>
+                                            <div class="date">21 July 2023</div>
+                                            <div class="time">Friday, 12:44 PM</div>
+                                            <div class="day">Day</div>
+                                            <div class="location">Dhaka</div>
+                                        </div>
+                                        <div class="forecast-grid">
+                                            <div class="forecast-item">
+                                                <h3>Wind</h3>
+                                                <p class="wind">6 km/h</p>
+                                                <p class="wind-dir">East</p>
+                                            </div>
+                                            <div class="forecast-item">
+                                                <h3>Humidity</h3>
+                                                <p class="humidity">69%</p>
+                                            </div>
+                                            <div class="forecast-item">
+                                                <h3>Real Feel</h3>
+                                                <p class="real-feel">31°C</p>
+                                            </div>
+                                            <div class="forecast-item">
+                                                <h3>UV Index</h3>
+                                                <p class="uv-index">3</p>
+                                                <p>Moderate</p>
+                                            </div>
+                                            <div class="forecast-item">
+                                                <h3>Pressure</h3>
+                                                <p class="pressure">1000 mb</p>
+                                            </div>
+                                            <div class="forecast-item">
+                                                <h3>Chance of rain</h3>
+                                                <p class="rain-chance">70%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="data-source"></div>
+                                </div>
+                            
+                        </div>
+                        <div class="dropdown">
+                            <ion-icon name="language-outline"></ion-icon>
+                            <div class="dropdown-content">
+                                <a href="radio-fr.html">Français</a>
+                                <a href="radio-ar.html">عربي</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="rightNav">
+                        <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+                        <div class="overlay">
+                            <div class="content">
+                                <ul class="side">
+                                    <a href="">
+                                        <li>Home</li>
+                                      
+                                    </a>
+                                    <div class="a">
+                                            <li>JC FM</li>
+                                            <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                    <div class="lin">
+                                        <a href="about.html" class="enter">
+                                            <li>About Us</li>
+                                        </a>
+                                        <a href="nice.html" class="enter">
+                                            <li>Team</li>
+                                        </a>
+                                        <a href="#container1" class="enter">
+                                            <li>Contact US</li>
+                                        </a>
+                                    </div>
+                                       
+                                   
+                                    <div class="a">
+                                        <li>Content creaters</li>
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>                                        
+                                       <div class="lin">
+                                         <a href="" class="enter">
+                                             <li>Youtube</li>
+                                         </a>
+                                         <a href="team-you.html" class="enter">
+                                             <li>Clan</li>
+                                         </a>
+                                       </div>
+                                    <div class="a">
+                                         <li>Radio</li>
+                                         <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                        <div class="lin">
+                                             <a href="programs.html" class="enter">
+                                                <li>Programms</li>
+                                            </a>
+                                            <a href="test.html" class="enter">
+                                                <li>Radio Web</li>
+                                            </a>
+                                            
+                                        </div>
+                                        <a href="">
+                                            <li>Podcast</li>
+                                        </a>
+                                    <a href="shop.html">
+                                        <li>Shop</li>
+                                    </a>
+                                    
+                                    
+                                    <a href="news.html">
+                                        <li>News</li>
+                                    </a>
+                                    <a href="sport.html">
+                                        <li>Sport</li>
+                                    </a>
+                                    <a href="article.html">
+                                        <li>Article</li>
+                                    </a>
+                                    <a href="events.html">
+                                        <li>Events</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </nav>
+        <div class="heroFlexContainer">
+            <div class="heroContainer">
+                <div class="TopHero">
+                    <div class="leftTopHero">
+                        <h1>Social-Economic</h1>
+                    </div>
+                    <div class="rightTopHero">
+                        <img src="zigzag.png" alt="">
+                    </div>
+                    
+                </div>
+                <div class="botHero">
+                    <div class="leftBotHero">
+                        <img src="zigzag.png" alt="">
+                    </div>
+                    <div class="middleBotHero">
+                        <h1>Youth</h1>
+                    </div>
+                    <div class="rightBotHero">
+                        <p>Integration , Social Cohesion and Economic Empowerment of Youth</p>
+                    </div>
+                </div>
+                <div id="iso"></div>
+                <div class="HeroFooter">
+                    <div class="leftFooter">
+                        <h2>Podcast available on:</h2>
+                    </div>
+                    <div class="rightFooter">
+                        <a href=""><img src="spotify-logo-5434.svg" width="40px" height="40" alt="" class="logosFooter"></a>
+                       
+                        <a href=""><img src="youtube-logo-2431.svg" width="40px" height="40"  alt="" class="logosFooter"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sec">
+        <div class="arrow left-arrow" onclick="prevVideo()"><ion-icon name="chevron-back-outline"></ion-icon></div>
+        <div class="live">
+            <div class="red"></div>
+            <a id="video-link" href="">
+                <video id="video-player" src="" autoplay loop muted class="active-video"></video>
+            </a>
+            <div class="live-content">
+               
+                <div class="title">
+                    
+                    <h1 id="live-title">Live Now</h1>
+                    <p id="live-description">Join us for an exciting live event where we'll dive into engaging discussions, share valuable insights, and interact with our amazing community in real-time. Whether you're here to learn</p>
+                </div>
+            </div>
+        </div>
+        <div class="arrow right-arrow" onclick="nextVideo()"><ion-icon name="chevron-forward-outline"></ion-icon></div>
+    </div>
+    
+   <div class="news">
+   <div>
+    
+    <div class="news-title"> 
+         <h1>News</h1>
+    </div>
+      <div>
+         <div class="episode">
+             <div class="time1">
+             <div>
+                <div class="episode-number">EP 5</div>
+                <div class="episode-date">9.20.2022</div>
+             </div>
+             </div>
+              <img src="json.jpg" alt="Coffee cup" class="episode-image" onclick="playMedia(5)">
+              <div class="episode-info">
+                  <div class="episode-tag">Design</div>
+                  <h2 class="episode-title">Good design is made from coffee</h2>
+                  <p class="episode-description">Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Suspendisse eu ligula. Nunc nec neque. Praesent ut ligula non mi varius sagittis. Aliquam erat volutpat.</p>
+                  <div class="episode-author">
+                      <img src="json.jpg" alt="Isaiah Fischer" class="author-avatar">
+                      <span class="author-name">with Isaiah Fischer</span>
+                  </div>
+              </div>
+          </div>
+          <hr>
+          <div class="episode">
+              <div class="time1">
+                 <div>
+                   <div class="episode-number">EP 5</div>
+                   <div class="episode-date">9.20.2022</div>
+                 </div>
+                </div>
+              <img src="pex.jpg" alt="Plant leaf" class="episode-image" onclick="playMedia(4)">
+              <div class="episode-info">
+               
+                  <div class="episode-tag">Design</div>
+                  <h2 class="episode-title">How nature influences our website</h2>
+                  <p class="episode-description">Nunc nec neque. Quisque id mi. Cras ultricies mi eu turpis hendrerit fringilla. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Phasellus nec sem in justo pellentesque facilisis.</p>
+                  <div class="episode-author">
+                      <img src="json.jpg" alt="Antonio Hutchings" class="author-avatar">
+                      <span class="author-name">with Antonio Hutchings</span>
+                  </div>
+              </div>
+          </div>
+          <hr>
+          <div class="episode">
+            <div class="time1">
+            <div>
+               <div class="episode-number">EP 5</div>
+               <div class="episode-date">9.20.2022</div>
+            </div>
+            </div>
+             <img src="json.jpg" alt="Coffee cup" class="episode-image" onclick="playMedia(5)">
+             <div class="episode-info">
+                 <div class="episode-tag">Design</div>
+                 <h2 class="episode-title">Good design is made from coffee</h2>
+                 <p class="episode-description">Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Suspendisse eu ligula. Nunc nec neque. Praesent ut ligula non mi varius sagittis. Aliquam erat volutpat.</p>
+                 <div class="episode-author">
+                     <img src="json.jpg" alt="Isaiah Fischer" class="author-avatar">
+                     <span class="author-name">with Isaiah Fischer</span>
+                 </div>
+             </div>
+         </div>
+         <hr>
+         <div class="episode">
+             <div class="time1">
+                <div>
+                  <div class="episode-number">EP 5</div>
+                  <div class="episode-date">9.20.2022</div>
+                </div>
+               </div>
+             <img src="pex.jpg" alt="Plant leaf" class="episode-image" onclick="playMedia(4)">
+             <div class="episode-info">
+              
+                 <div class="episode-tag">Design</div>
+                 <h2 class="episode-title">How nature influences our website</h2>
+                 <p class="episode-description">Nunc nec neque. Quisque id mi. Cras ultricies mi eu turpis hendrerit fringilla. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Phasellus nec sem in justo pellentesque facilisis.</p>
+                 <div class="episode-author">
+                     <img src="json.jpg" alt="Antonio Hutchings" class="author-avatar">
+                     <span class="author-name">with Antonio Hutchings</span>
+                 </div>
+             </div>
+         </div>
+         <hr>
+         <div class="episode">
+            <div class="time1">
+               <div>
+                 <div class="episode-number">EP 5</div>
+                 <div class="episode-date">9.20.2022</div>
+               </div>
+              </div>
+            <img src="pex.jpg" alt="Plant leaf" class="episode-image" onclick="playMedia(4)">
+            <div class="episode-info">
+             
+                <div class="episode-tag">Design</div>
+                <h2 class="episode-title">How nature influences our website</h2>
+                <p class="episode-description">Nunc nec neque. Quisque id mi. Cras ultricies mi eu turpis hendrerit fringilla. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Phasellus nec sem in justo pellentesque facilisis.</p>
+                <div class="episode-author">
+                    <img src="json.jpg" alt="Antonio Hutchings" class="author-avatar">
+                    <span class="author-name">with Antonio Hutchings</span>
+                </div>
+            </div>
+            
+        </div>
+        <a href="news.html">
+            <div class="news-btn">
+                <button>See more</button>
+            </div>
+        </a>
+      </div>
+   
+    </div>
+   
+   </div>
+       <div class="scroller" data-speed="slow" data-direction="right">
+           <ul class="tag-list scroller__inner">
+               <li class="news-item">Latest news: The market reaches a record high&nbsp;</li>
+               <li class="news-item">Weather alert: Heavy rains expected tomorrow&nbsp;</li>
+               <li class="news-item">Sports: Local team wins championship</li>
+               <li class="news-item">Technology: A new smartphone model launched today</li>
+               <li class="news-item">Health: Tips for a healthier life</li>
+               <li class="news-item">Beauty: The latest fashion trends this season</li>
+               <li class="news-item">Music: A big concert in town next week</li>
+               <li class="news-item">Politics: International summit on climate issues</li>
+               <li class="news-item">Education: New university inaugurated in the capital</li>
+               <li class="news-item">Economy: Economic growth forecasts for the next quarter</li>
+               <li class="news-item">Culture: An art exhibition attracts thousands of visitors</li>
+               <li class="news-item">Travel: New tourist destinations open to visitors</li>
+               <li class="news-item">Science: A new scientific discovery in the medical field</li>
+               <li class="news-item">Environment: A national reforestation campaign starts next month</li>
+           </ul>
+       </div>
+       
+         <div class="main">
+           <div class="container3">
+               <h1>Browse podcasts by topic</h1>
+               <p>Vestibulum volutpat pretium libero. Integer tincidunt.<br>Ut tincidunt tincidunt erat. Nullam sagittis.</p>
+               <div class="topics">
+                   <div class="topic"><span>Lifestyle</span></div>
+                   <div class="topic"><span>Art</span></div>
+                   <div class="topic"><span>Design</span></div>
+                   <div class="topic"><span>Sport</span></div>
+                   <div class="topic"><span>Technology</span></div>
+               </div>
+           </div>
+       </div>
+       <div class="container1" id="Contact">
+        <div class="last-cont">   
+        <div class="zigzag"><img src="zigzag.png" alt=""></div>
+            <div class="mail">
+                <h1 class="last">Contact us <br>in our mail</h1>
+                <div class="email-form">
+                    <textarea id="message" placeholder="send us an Email... "></textarea>
+                    <button class="button1"onclick="sendMessage()">Submit</button>
+                    <h1 class="thank">Thank you for your Message 🤗</h1>
+                </div>
+            </div>
+            <div class="zigzag"><img src="zigzag.png" alt=""></div>
+            </div>    
+       </div>
+        </div>
+
+        <div class="article-container">
+          
+          <div class="all">
+            <h1>See our new post</h1>
+               <div class="sec-auth">
+                 <div class="authors">
+                     <img src="author.jpg" alt="Author 1" class="author-avatar">
+                     <img src="author.jpg" alt="Author 2" class="author-avatar">
+                     <img src="author.jpg" alt="Author 3" class="author-avatar">
+                     <img src="author.jpg" alt="Author 4" class="author-avatar">
+                     <img src="author.jpg" alt="Author 5" class="author-avatar">
+                     <br>
+                 </div>
+                 <a href="#" class="meet-authors">Meet all the authors</a>
+               </div>
+          </div>
+           <div class="articles">
+               <div class="article">
+                   <img src="a1.jpg" alt="Movement">
+                   <div class="article-content">
+                       <div class="article-category">Chess</div>
+                       <h2 class="article-title">Movement on the image - the guide to sports photography</h2>
+                       <p class="article-excerpt">Quisque id odio. Nullam dictum felis eu pede mollis pretium. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Donec vitae</p>
+                   </div>
+                 
+               </div>
+               <div class="article">
+                   <img src="a2.jpg" alt="Workspace">
+                   <div class="article-content">
+                       <div class="article-category">Conspiracy</div>
+                       <h2 class="article-title">Your workspace should be your sanctuary. Here's how to do it.</h2>
+                       <p class="article-excerpt">Sed in libero ut nibh placerat accumsan. Cras non dolor. Phasellus dolor. Fusce commodo aliquam arcu. In hac habitasse platea dictumst.</p>
+                   </div>
+                   
+               </div>
+               <div class="article">
+                   <img src="a3.jpg" alt="Art">
+                   <div class="article-content">
+                       <div class="article-category">People</div>
+                       <h2 class="article-title">Understanding ourselves through art</h2>
+                       <p class="article-excerpt">Nunc nulla. Praesent ac massa at ligula laoreet iaculis. Aliquam erat volutpat. Aenean commodo ligula eget dolor.</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="post">
+        <a href="article.html">
+            <button class="button">All articles</button>
+        </a>
+    
+       </div>
+       <footer class="footer">
+           <div class="footer-container">
+               <div class="footer-brand">
+                   <p class="footer-description"></p>
+                   <a href="#" class="footer-cta">Our sections</a>
+               </div>
+               
+               <div class="footer-links">
+                   <div class="footer-column">
+                       <h3>Social networks</h3>
+                       <ul>
+                           <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                           <li><a href="#"><i class="fab fa-tiktok"></i> TikTok</a></li>
+                           <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                           <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                           <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                       </ul>
+                   </div>
+                   
+                   <div class="footer-column">
+                       <h3>Main pages</h3>
+                       <ul>
+                           <li><a href="#">Home</a></li>
+                           <li><a href="#">About us</a></li>
+                           <li><a href="#">Podcast</a></li>
+                         
+                       </ul>
+                   </div>
+                   
+                   <div class="footer-column">
+                       <h3>People</h3>
+                       <ul>
+                           <li><a href="nice.html">Radio Team </a></li>
+                           <li><a href="#">Youtube Team</a></li>
+                           <li><a href="#Contact">Contact Us</a></li> 
+                       </ul>
+                   </div>
+               </div>
+               
+               <div class="footer-divider"></div>
+               
+              
+               <div class="footer-divider"></div>
+               
+               <div class="footer-tertiary">
+                   <div class="footer-column" >
+                       <h3>Blog</h3>
+                       <ul>
+                        <li><a href="#">News<span class="badge shop">Verified</span></a></li>
+                           <li><a href="#">Article <span class="badge shop">Pro</span></a></li>
+                       </ul>
+                   </div>
+                   <div class="footer-column" id="col2">
+                       <h3>Copyright © 2024</h3>
+                       <ul>
+                           <li><a href="#">Powered by and all rights are secured</a></li>
+                           <li><a href="#"></a></li>
+                           <li><a href="#">Website creator by : Ayoub & Jesser ™</a></li>
+                       </ul>
+                   </div>
+                   <div class="footer-column" id="col1">
+                       <h3>Additional pages</h3>
+                       <ul>
+                           <li><a href="#">Events</a></li>
+                           <li><a href="#">Shop</a></li>
+                           <li><a href="#">Sport</a></li>
+                       </ul>
+                   </div>
+               </div>
+               <div class="footer-column" id="col3">
+                <h3>Copyright © 2024</h3>
+                <ul>
+                    <li><a href="#">Powered by and all rights are secured</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#">Website creator by : Ayoub & Jesser ™</a></li>
+                </ul>
+            </div>
+           </div>
+       </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script-en.js">
+        
+       
+    </script>
+</body>
+</html>
