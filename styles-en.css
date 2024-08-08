@@ -1,13 +1,334 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Zain:wght@200;300;400;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@200;400&family=Zain:wght@200;300;400;700;800;900&display=swap');
 * {
     list-style: none;
     margin: 0;
     padding: 0;
     font-family: "poppins", sans-serif;
     text-decoration: none;
+    
     box-sizing: border-box;
    
+   
+}
+html{
+    overflow-x: hidden;
+}
+.div-down {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.arrow{
+    z-index: 1;
+}
+.hero h1 {
+    font-size: 5vw;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    line-height: 4vw;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 100px;
+}
+
+#zig {
+    width: 30vw;
+    transform: scale(.9);
+}
+
+.hero-sec {
+    width: 75%;
+}
+
+#spot {
+    width: 2vw;
+    height: 2vw;
+}
+
+.div-up {
+    margin-bottom: 10px;
+}
+
+.up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.down-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.text {
+    font-weight: 500;
+    width: 370px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.pod {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+@media (max-width:1400px) {
+    .hero {
+        transform: scale(1.1);
+    }
+    #spot {
+        width: 3vw;
+        height: 3vw;
+    }
+    .div-up {
+        margin-bottom: 40px;
+    }
+    .pod {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .music {
+        transform: scale(.8);
+        width: 29vw;
+    }
+    
+}
+
+@media (max-width:1100px) {
+    .hero {
+        transform: scale(1.23);
+    }
+    .text {
+        width: 200px;
+        font-size: 15px;
+    }
+   
+}
+
+@media (max-width:710px) {
+    .up {
+        flex-direction: column;
+    }
+    .music1 {
+        display: none !important;
+        margin-left: 0;
+       
+    }
+
+    .music{
+        bottom: 20px;
+        width: 40vw;
+        transform: scale(.6) translateX(-30px) translateY(10px);
+       
+        
+    }
+    .music .bar{
+        margin-left: 6px;
+        
+    }
+    #spot {
+        width: 4vw;
+        height: 4vw;
+    }
+    .down {
+        flex-direction: column;
+    }
+    .down-sec {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .social{
+        margin-bottom: 30px;
+    }
+    .div-up {
+        transform: scale(1.37);
+    }
+    .text {
+        width: 260px;
+        text-align: center;
+        font-size: 12px;
+    }
+    .item {
+        display: none;
+    }
+    .pod {
+        font-size: 12px;
+    }
+   
+}
+
+.left-sec {
+    font-family: "Montserrat", sans-serif;
+}
+
+.up, .down {
+    height: 120px;
+}
+
+.music {
+    width: 25vw;
+    height: 2vw;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.music .bar {
+    width: 12px;
+    border-radius: 10px;
+    background: white;
+    animation: loader 1.5s ease-in-out infinite;
+}
+
+@keyframes loader {
+    0%, 100% {
+        height: 2px;
+    }
+    50% {
+        height: 80px;
+    }
+}
+
+.music .bar:nth-child(1) {
+    background: purple;
+    animation-delay: 1s;
+}
+
+.music .bar:nth-child(2) {
+    background: crimson;
+    animation-delay: .8s;
+}
+
+.music .bar:nth-child(3) {
+    background: deeppink;
+    animation-delay: .6s;
+}
+
+.music .bar:nth-child(4) {
+    background: orange;
+    animation-delay: .4s;
+}
+
+.music .bar:nth-child(5) {
+    background: gold;
+    animation-delay: .2s;
+}
+
+.music .bar:nth-child(6) {
+    background: gold;
+    animation-delay: .2s;
+}
+
+.music .bar:nth-child(7) {
+    background: orange;
+    animation-delay: .4s;
+}
+
+.music .bar:nth-child(8) {
+    background: deeppink;
+    animation-delay: .6s;
+}
+
+.music .bar:nth-child(9) {
+    background: crimson;
+    animation-delay: .8s;
+}
+
+.music .bar:nth-child(10) {
+    background: purple;
+    animation-delay: 1s;
+}
+.music1 {
+    width: 25vw;
+    height: 2vw;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.music1 .bar {
+    width: 12px;
+    border-radius: 10px;
+    background: white;
+    animation: loader 1.5s ease-in-out infinite;
+}
+
+@keyframes loader {
+    0%, 100% {
+        height: 2px;
+    }
+    50% {
+        height: 80px;
+    }
+}
+
+.music1 .bar:nth-child(1) {
+    background: purple;
+    animation-delay: 1s;
+}
+
+.music1 .bar:nth-child(2) {
+    background: crimson;
+    animation-delay: .8s;
+}
+
+.music1 .bar:nth-child(3) {
+    background: deeppink;
+    animation-delay: .6s;
+}
+
+.music1 .bar:nth-child(4) {
+    background: orange;
+    animation-delay: .4s;
+}
+
+.music1 .bar:nth-child(5) {
+    background: gold;
+    animation-delay: .2s;
+}
+
+.music1 .bar:nth-child(6) {
+    background: gold;
+    animation-delay: .2s;
+}
+
+.music1 .bar:nth-child(7) {
+    background: orange;
+    animation-delay: .4s;
+}
+
+.music1 .bar:nth-child(8) {
+    background: deeppink;
+    animation-delay: .6s;
+}
+
+.music1 .bar:nth-child(9) {
+    background: crimson;
+    animation-delay: .8s;
+}
+
+.music1 .bar:nth-child(10) {
+    background: purple;
+    animation-delay: 1s;
 }
 .sec{
     height: 60vh;
@@ -21,6 +342,7 @@
 }
 .navFlexContainer{
     width: 100%;
+    margin-top: 4px;
     height: 4.5rem;
     display: flex;
     justify-content: center;
@@ -45,6 +367,7 @@
     width: 80%;
     height: 100%;
     display: grid;
+    
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "leftNav middleNav rightNav";
@@ -57,6 +380,7 @@
     justify-content: space-between;
     gap: 10px;
     width: 500px;
+    margin-top: 10px;
 }
 .rightNav button{
     float: right  ;
@@ -101,6 +425,7 @@ div.heroFlexContainer > div > div.TopHero > div.leftTopHero > h1{
     display: grid;
     grid-template-rows:1fr 1fr 0.1fr 1fr;
 }
+
 .TopHero{
     display: flex;
     justify-content: center;
@@ -111,6 +436,7 @@ div.heroFlexContainer > div > div.TopHero > div.leftTopHero > h1{
     font-size: 3rem;
     font-weight: bold;
     width: 850px;
+   
 }
 .botHero{
     display: flex;
@@ -130,16 +456,17 @@ div.heroFlexContainer > div > div.TopHero > div.leftTopHero > h1{
     flex-direction: row
 }
 .logosFooter{
-   margin-left: 0;
-    padding: 20px 10px;
-    width: 50px;
+ margin-left: 20px;
+ transition: .3s ease-in-out;
+   
 }
 .logosFooter:hover{
-    cursor: pointer;
-    background-color: rgba(0,0,0,0.2);
-    border-radius:5px ;
-    transition: 0.5s ease-in-out;
+    transform: translateY(-12px);
+    transition: .3s ease-in-out;
+      
 }
+
+
 div.heroFlexContainer > div > div.HeroFooter > div.leftFooter > h2{
     font-size: 1.8rem;
     font-family: monospace;
@@ -148,8 +475,18 @@ div.heroFlexContainer > div > div.HeroFooter > div.leftFooter > h2{
     font-size: 1.8rem;
     font-family: monospace;
 }
-
-
+.leftNav h3{
+    margin-top: 5px;
+    
+}
+@media (max-width:800px) {
+    .list a {
+        display: none;
+    }
+    .list{
+        justify-content: center;
+    }
+}
 ion-icon {
     cursor: pointer;
     color: rgb(8, 8, 8);
@@ -420,12 +757,12 @@ body.open {
             padding:30px 50px ;
 
         }
-        @media (min-width: 968px) {
+        @media (min-width: 1220px) {
            
             .episode {
                 display: flex;
-                
             }
+           
             .episode-image {
                 width: 500px;
                 height: 300px;
@@ -441,6 +778,7 @@ body.open {
     display: flex;
     justify-content: center;
     background-color: black;
+    padding-top: 90px;
 }
 .news-title{
     display: flex;
@@ -513,19 +851,23 @@ video:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateY(-170px);
+    transform: translateY(-80px);
     width: 1150px;
     height: 650px;
+   
   
 }
 
 .live-container {
+   
     position: relative;
     display: flex;
     align-items: center;
     transition: .4s ease-in-out;
 }
-
+#video-player{
+    border-radius:20px ;
+}
 .arrow {
     cursor: pointer;
     position: absolute;
@@ -535,8 +877,9 @@ video:hover{
     color: white;
     
     padding: 10px;
-    z-index: 10;
+    z-index: 1;
 }
+
 .left-arrow ion-icon{
     color: #fff;
     font-size: 104px;
@@ -567,17 +910,7 @@ video:hover{
     transition: .4s ease-in-out;
 }
 
-.red{
-position: absolute;
-top: 16px;
-left:94% ;
-content: "";
-width: 40px ;
-height: 40px;
-background: red;
-border-radius: 50%;
-box-shadow: inset -8PX 8PX 20PX white;
-}
+
 
 
 
@@ -596,9 +929,6 @@ margin-right: 10px;
 
 .fab {
 font-size: 16px;
-}
-body{
-margin: 0;
 }
 
 .footer-container {
@@ -859,11 +1189,7 @@ a:hover {
     animation-play-state: paused ;
 
 }
-body {
-    background-color: white;
-    color: black;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
+
 
 body.dark-mode {
     background-color: #333;
@@ -1045,6 +1371,33 @@ input:checked ~ #mode-icon {
     left: 10px;
     border: 2px solid white;
 }
+@media (max-width:1360px) {
+    .articles{
+        transform: scale(.8) translateX(-20px);
+    }
+}
+@media (max-width:1272px) {
+    .arrow{
+        margin-top:10%;
+    }
+    .live{
+        transform: scale(.8);
+    }
+    .news h1 {
+        margin-top: 15%;
+        font-size: 6em;
+    }
+    .news{
+        padding: 0  150px;
+        display: block;
+    }
+    .episode-image{
+        height: 500px;
+    }
+   
+
+}
+
 @media  (max-width:1178px) {
     .articles {
         display: grid;
@@ -1054,11 +1407,32 @@ input:checked ~ #mode-icon {
        justify-content: center;
       
     }
+    .live{
+        transform: scale(.8);
+    }
+    .live-content p{
+        font-size: 15px;
+        width: 330px;
+    }
+   
+     .left-arrow{
+       left: -10px;
+    }
+    .right-arrow{
+        right:  -10px;
+     }
+    .news h1 {
+        margin-top: 5%;
+        font-size: 5em;
+    }
     .article-container{
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+    }
+    .articles{
+        transform: scale(1)
     }
     .all{
         display: flex;
@@ -1069,7 +1443,7 @@ input:checked ~ #mode-icon {
     }
     
     .all h1{
-        font-size:43px;
+        font-size:37px;
     }
     .footer-links,.footer-tertiary{
         display: grid;
@@ -1108,6 +1482,83 @@ input:checked ~ #mode-icon {
     
     
 }
+@media (max-width:500px) {
+    .arrow{
+        margin-top:90%;
+    }
+    .news h1 {
+        margin-top: 45%;
+        font-size: 5em;
+    }
+    
+}
+@media (max-width:700px) {
+    .news{
+        padding: 20px;
+    }
+    .episode-image{
+        height: 400px;
+    }
+    
+}
+@media (max-width:380px) {
+    .article{
+      height: 400px;
+      width: 300px;
+      margin-left: 12px;
+       
+       
+    }
+    .last {
+        font-size: 3em !important;
+        
+    }
+    .email-form{
+        transform: scale(.74);
+    }
+    .episode-image{
+        height: 280px;
+    }
+    .live{
+       height: 500px;
+       transform: translateY(-60px) scale(.9);
+    }
+    .arrow{
+        transform: translateY(70px);
+        z-index: 1;
+    }
+    .live-content p{
+        font-size: 15px;
+        width: 270px;
+    }
+    .title{
+        transform: translateX(-20px);
+
+    }
+    .topic{
+        transform: scale(.87);
+        margin-left: 10px;
+      
+    }
+    .all{
+        margin-bottom: 0;
+    }
+    .all h1{
+        font-size:35px;
+    }
+    .article-content p{
+        font-size: 12px;
+    }
+    .article-content h2{
+        font-size: 14px;
+    }
+    .article img{
+       height: 180px;
+    }
+    
+
+}
+
 .all{
 display: flex;
 align-items: center;
@@ -1249,8 +1700,9 @@ p {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
     color: #333;
+    overflow-x:hidden ;
+    
 }
 .condition,.date,.time,.day,.location{
     font-weight: 400;
@@ -1313,6 +1765,7 @@ ion-icon {
     right: 10%;
     width: 80%;
     opacity: 0;
+   
     visibility: hidden;
     transition: opacity 0.2s ease, visibility 0.2s ease;
 }
@@ -1320,6 +1773,7 @@ ion-icon {
 .weather-section.show {
     opacity: 1;
     visibility: visible;
+    z-index: 10;
 }
 .weather-content {
     display: flex;
@@ -1347,11 +1801,7 @@ ion-icon {
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
-.body1{
-    position: absolute;
-    z-index: 100;
-   
-}
+
 
 
 .forecast-item {
