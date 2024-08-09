@@ -11,6 +11,7 @@
    
    
 }
+
 html{
     overflow-x: hidden;
 }
@@ -87,90 +88,6 @@ html{
     font-weight: 500;
 }
 
-@media (max-width:1400px) {
-    .hero {
-        transform: scale(1.1);
-    }
-    #spot {
-        width: 3vw;
-        height: 3vw;
-    }
-    .div-up {
-        margin-bottom: 40px;
-    }
-    .pod {
-        font-size: 15px;
-        font-weight: 500;
-    }
-    .music {
-        transform: scale(.8);
-        width: 29vw;
-    }
-    
-}
-
-@media (max-width:1100px) {
-    .hero {
-        transform: scale(1.23);
-    }
-    .text {
-        width: 200px;
-        font-size: 15px;
-    }
-   
-}
-
-@media (max-width:710px) {
-    .up {
-        flex-direction: column;
-    }
-    .music1 {
-        display: none !important;
-        margin-left: 0;
-       
-    }
-
-    .music{
-        bottom: 20px;
-        width: 40vw;
-        transform: scale(.6) translateX(-30px) translateY(10px);
-       
-        
-    }
-    .music .bar{
-        margin-left: 6px;
-        
-    }
-    #spot {
-        width: 4vw;
-        height: 4vw;
-    }
-    .down {
-        flex-direction: column;
-    }
-    .down-sec {
-        flex-direction: column;
-        margin-bottom: 20px;
-    }
-    .social{
-        margin-bottom: 30px;
-    }
-    .div-up {
-        transform: scale(1.37);
-    }
-    .text {
-        width: 260px;
-        text-align: center;
-        font-size: 12px;
-    }
-    .item {
-        display: none;
-    }
-    .pod {
-        font-size: 12px;
-    }
-   
-}
 
 .left-sec {
     font-family: "Montserrat", sans-serif;
@@ -377,8 +294,9 @@ html{
 }
 .list{
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: center;
+   
+    gap: 30px;
     width: 500px;
     margin-top: 10px;
 }
@@ -479,14 +397,9 @@ div.heroFlexContainer > div > div.HeroFooter > div.leftFooter > h2{
     margin-top: 5px;
     
 }
-@media (max-width:800px) {
-    .list a {
-        display: none;
-    }
-    .list{
-        justify-content: center;
-    }
-}
+
+
+
 ion-icon {
     cursor: pointer;
     color: rgb(8, 8, 8);
@@ -590,9 +503,9 @@ ion-icon {
     clip-path: circle(150% at calc(100% - 45px) 45px);
 }
 
-body.open {
+html.open {
     overflow-y: hidden;
-    transition: .4s ease-in-out;
+   
 }
 
 .side {
@@ -757,20 +670,7 @@ body.open {
             padding:30px 50px ;
 
         }
-        @media (min-width: 1220px) {
-           
-            .episode {
-                display: flex;
-            }
-           
-            .episode-image {
-                width: 500px;
-                height: 300px;
-            }
-            .episode-info {
-                flex: 1;
-            }
-        }
+      
 .news{
     height: auto;
    align-items: center;
@@ -1191,10 +1091,7 @@ a:hover {
 }
 
 
-body.dark-mode {
-    background-color: #333;
-    color: white;
-}
+
 
 .container {
     text-align: center;
@@ -1226,6 +1123,7 @@ body.dark-mode {
     transition: .4s;
     border-radius: 34px;
 }
+
 
 .slider:before {
     position: absolute;
@@ -1371,193 +1269,7 @@ input:checked ~ #mode-icon {
     left: 10px;
     border: 2px solid white;
 }
-@media (max-width:1360px) {
-    .articles{
-        transform: scale(.8) translateX(-20px);
-    }
-}
-@media (max-width:1272px) {
-    .arrow{
-        margin-top:10%;
-    }
-    .live{
-        transform: scale(.8);
-    }
-    .news h1 {
-        margin-top: 15%;
-        font-size: 6em;
-    }
-    .news{
-        padding: 0  150px;
-        display: block;
-    }
-    .episode-image{
-        height: 500px;
-    }
-   
 
-}
-
-@media  (max-width:1178px) {
-    .articles {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
-       align-items: center;
-       justify-content: center;
-      
-    }
-    .live{
-        transform: scale(.8);
-    }
-    .live-content p{
-        font-size: 15px;
-        width: 330px;
-    }
-   
-     .left-arrow{
-       left: -10px;
-    }
-    .right-arrow{
-        right:  -10px;
-     }
-    .news h1 {
-        margin-top: 5%;
-        font-size: 5em;
-    }
-    .article-container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .articles{
-        transform: scale(1)
-    }
-    .all{
-        display: flex;
-       flex-direction: column;
-        
-        
-        
-    }
-    
-    .all h1{
-        font-size:37px;
-    }
-    .footer-links,.footer-tertiary{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
-        margin-left: 30px;
-    }
-    #col1{
-        transform: translateX(0);
-        }
-        #col2{
-        display: none;
-     }
-     #col3{
-        display: block;
-     }
-    
-     .topics {
-        
-        flex-direction: column;
-        gap: 15px;
-        margin-bottom: 30px;
-        
-    }
-
-    .container3 {
-     margin: 40px 0;
-    }
-     .last-cont,.zigzag img{
-        
-        flex-direction: column;
-     }
-    .mail,.zigzag img{
-        transform: scale(.8);
-    }
-    
-    
-}
-@media (max-width:500px) {
-    .arrow{
-        margin-top:90%;
-    }
-    .news h1 {
-        margin-top: 45%;
-        font-size: 5em;
-    }
-    
-}
-@media (max-width:700px) {
-    .news{
-        padding: 20px;
-    }
-    .episode-image{
-        height: 400px;
-    }
-    
-}
-@media (max-width:380px) {
-    .article{
-      height: 400px;
-      width: 300px;
-      margin-left: 12px;
-       
-       
-    }
-    .last {
-        font-size: 3em !important;
-        
-    }
-    .email-form{
-        transform: scale(.74);
-    }
-    .episode-image{
-        height: 280px;
-    }
-    .live{
-       height: 500px;
-       transform: translateY(-60px) scale(.9);
-    }
-    .arrow{
-        transform: translateY(70px);
-        z-index: 1;
-    }
-    .live-content p{
-        font-size: 15px;
-        width: 270px;
-    }
-    .title{
-        transform: translateX(-20px);
-
-    }
-    .topic{
-        transform: scale(.87);
-        margin-left: 10px;
-      
-    }
-    .all{
-        margin-bottom: 0;
-    }
-    .all h1{
-        font-size:35px;
-    }
-    .article-content p{
-        font-size: 12px;
-    }
-    .article-content h2{
-        font-size: 14px;
-    }
-    .article img{
-       height: 180px;
-    }
-    
-
-}
 
 .all{
 display: flex;
@@ -1696,19 +1408,20 @@ p {
 .search-button ion-icon{
     color: #fff;
 }
-.body1, html {
+html {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
     overflow-x:hidden ;
     
+    
 }
 .condition,.date,.time,.day,.location{
     font-weight: 400;
 }
 .container {
-    max-width: 1000px;
+    max-width:1000px;
     margin: 20px auto;
     background-color: white;
     border-radius: 20px;
