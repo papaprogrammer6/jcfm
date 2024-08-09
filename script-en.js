@@ -51,10 +51,11 @@ document.addEventListener('DOMContentLoaded', function() {
     videos[index].classList.add('active-video');
     videos[index].play();
   }
-
+  
   function nextVideo() {
     currentVideoIndex = (currentVideoIndex + 1) % videos.length;
     showVideo(currentVideoIndex);
+    
   }
 
   function previousVideo() {
@@ -78,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 const videos = [
-  { src: 'vd.mp4', title: 'Live Now', description: 'Join us for an exciting live event where we\'ll dive into engaging discussions, share valuable insights, and interact with our amazing community in real-time.' },
+  { src: 'vd.mp4', title: 'Live🔴 ', description: 'Join us for an exciting live event where we\'ll dive into engaging discussions, share valuable insights, and interact with our amazing community in real-time.' },
   { src: 'vd2.mp4', title: 'Exciting Show', description: 'Don\'t miss out on our latest show where we cover a variety of interesting topics and interviews.' },
   { src: 'vd3.mp4', title: 'Trending Topics', description: 'Stay updated with the latest trends and discussions happening around the world.' },
   { src: 'vd4.mp4', title: 'Cultural Spotlight', description: 'Discover diverse cultures and traditions from around the world in this eye-opening exploration' },
@@ -115,10 +116,10 @@ document.addEventListener('DOMContentLoaded', updateContent);
 function toggleSidebar() {
   const overlay = document.querySelector('.overlay');
   const toggle = document.querySelector('.toggle-btn');
-  const body = document.querySelector('body');
+  const html = document.querySelector('html');
   // Toggle the 'open' class on the overlay
   overlay.classList.toggle('open');
-  body.classList.toggle('open');
+  html.classList.toggle('open');
   toggle.classList.toggle('active')
   // Update the toggle button content based on the overlay's state
   if (overlay.classList.contains('open')) {
@@ -321,6 +322,9 @@ function sendMessage() {
           alert('Failed to send message. Please try again.');
       });
 }
+(function() {
+    emailjs.init('u5C0JUy5j0rxkkC72');
+})();
 
 
 
